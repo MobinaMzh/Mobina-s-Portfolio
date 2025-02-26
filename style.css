@@ -22,6 +22,7 @@ body {
 
 #header h1 {
     font-size: 2.5em;
+    margin-bottom: 0;
 }
 
 #header .title {
@@ -45,10 +46,26 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
+/* Ensure the page looks good on all screen sizes */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    #header h1 {
+        font-size: 2em;
+    }
+
+    #header .title {
+        font-size: 1em;
+    }
+}
+
+/* Section Titles */
 h2 {
     font-size: 2em;
     margin-bottom: 20px;
@@ -67,6 +84,10 @@ h2 {
 ul {
     list-style-type: none;
     padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
 }
 
 /* Skills and Projects Section */
